@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "uCnY3mE+nzTZFhxxMA6bP0NsEyHj37oDg8gFMux2kcCB0QmsqTrgFdiEogUVv+TTfbCHNTgz/A4J5CJC/T6MBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\josip\\OneDrive\\Radna površina\\DIS_projekt\\DIS_projekt\\DIS_project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\josip\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\josip\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\josip\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\josip\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\josip\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\josip\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
