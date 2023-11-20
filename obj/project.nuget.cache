@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uCnY3mE+nzTZFhxxMA6bP0NsEyHj37oDg8gFMux2kcCB0QmsqTrgFdiEogUVv+TTfbCHNTgz/A4J5CJC/T6MBg==",
+  "dgSpecHash": "zcOcViIvt+lyNGnpoKYp9wfxBPqd1JY/KF5Hh7X1cBozPnl9hf3EMkCE2/dkFa0zorVYKgXO7Cj+IizV1b0PXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\josip\\OneDrive\\Radna površina\\DIS_projekt\\DIS_projekt\\DIS_project.csproj",
+  "projectFilePath": "C:\\Users\\josip\\OneDrive\\Radna površina\\jsanad-hw-03\\DIS_project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josip\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\josip\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

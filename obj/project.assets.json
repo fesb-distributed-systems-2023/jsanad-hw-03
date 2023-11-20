@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josip\\OneDrive\\Radna površina\\DIS_projekt\\DIS_projekt\\DIS_project.csproj",
+      "projectUniqueName": "C:\\Users\\josip\\OneDrive\\Radna površina\\jsanad-hw-03\\DIS_project.csproj",
       "projectName": "DIS_project",
-      "projectPath": "C:\\Users\\josip\\OneDrive\\Radna površina\\DIS_projekt\\DIS_projekt\\DIS_project.csproj",
+      "projectPath": "C:\\Users\\josip\\OneDrive\\Radna površina\\jsanad-hw-03\\DIS_project.csproj",
       "packagesPath": "C:\\Users\\josip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josip\\OneDrive\\Radna površina\\DIS_projekt\\DIS_projekt\\obj\\",
+      "outputPath": "C:\\Users\\josip\\OneDrive\\Radna površina\\jsanad-hw-03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\josip\\AppData\\Roaming\\NuGet\\NuGet.Config",
