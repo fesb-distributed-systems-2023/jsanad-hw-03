@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DIS_project.props" />
+</Project>
