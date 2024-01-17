@@ -16,22 +16,23 @@
 using CompanyApplication.Repositories;
 using DIS_projekt.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.Sqlite;
 
 namespace CompanyApplication.Controllers
 {
     [ApiController]
     public class CompanyController : ControllerBase
     {
-        private readonly CompanyRepository _companyRepository;
+        private readonly ICompanyRepository _companyRepository;
 
-        public CompanyController(CompanyRepository companyRepository)
+        public CompanyController(ICompanyRepository companyRepository)
         {
             _companyRepository = companyRepository;
         }
 
        
         [HttpPost("/companies/new")]
-        public IActionResult CreateNewEmail([FromBody] Company company)
+        public IActionResult CreateNewCompany([FromBody] Company company)
         {
             bool fSuccess = _companyRepository.CreateNewCompany(company);
 

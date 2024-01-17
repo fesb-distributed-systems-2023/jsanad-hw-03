@@ -12,10 +12,11 @@
 
 using Microsoft.AspNetCore.Mvc;
 using DIS_projekt.Models;
+using Microsoft.Data.Sqlite;
 
 namespace CompanyApplication.Repositories
 {
-    public class CompanyRepository
+    public class CompanyRepository : ICompanyRepository
     {
         // List of all companies
         private readonly List<Company> m_lstCompanies;
