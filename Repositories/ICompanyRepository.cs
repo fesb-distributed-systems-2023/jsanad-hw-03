@@ -10,5 +10,6 @@ namespace CompanyApplication.Repositories
         IEnumerable<Company> GetAllCompanies();
         Company GetSingleCompany(int id);
         bool DeleteCompany(int id);
+        void UpdateCompany(int id, Company company);
     }
 }

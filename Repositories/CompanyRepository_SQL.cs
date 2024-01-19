@@ -31,8 +31,7 @@ namespace CompanyApplication.Repositories
 
             if (rowsAffected < 1)
             {
-                throw new ArgumentException("Could not insert email into database.");
-                return false;
+                throw new ArgumentException("Could not insert company into database.");
             }
             return true;
         }
@@ -54,8 +53,7 @@ namespace CompanyApplication.Repositories
 
             if (rowsAffected < 1)
             {
-                throw new ArgumentException($"No companiess with ID = {id}.");
-                return false;
+                throw new ArgumentException($"No companies with ID = {id}.");
             }
             return true;
         }
@@ -81,7 +79,7 @@ namespace CompanyApplication.Repositories
                     CompanyName = reader.GetString(1),
                     OwnerName = reader.GetString(2),
                     Product = reader.GetString(3),
-                    Revenue = reader.GetInt32(4),
+                    Revenue = reader.GetString(4),
                 };
 
                 results.Add(row);
@@ -90,7 +88,7 @@ namespace CompanyApplication.Repositories
             return results;
         }
 
-        public Company? GetSingleCompany(int id)
+        public Company GetSingleCompany(int id)
         {
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
@@ -103,7 +101,7 @@ namespace CompanyApplication.Repositories
 
             using var reader = command.ExecuteReader();
 
-            Company result = null;
+            Company? result = null;
 
             if (reader.Read())
             {
@@ -113,12 +111,16 @@ namespace CompanyApplication.Repositories
                     CompanyName = reader.GetString(1),
                     OwnerName = reader.GetString(2),
                     Product = reader.GetString(3),
-                    Revenue = reader.GetInt32(4),
+                    Revenue = reader.GetString(4),
                 };
             }
 
             return result;
         }
 
+        public void UpdateCompany(int id, Company company)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
