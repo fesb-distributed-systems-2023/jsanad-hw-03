@@ -1,21 +1,11 @@
-﻿/*
-**********************************
-* Author: Josip Sanader
-* Project Task: Company, Phase 2
-**********************************
-* Description:
-*  
-*  Implement `ICompanyRepository` interface
-*
-**********************************
-*/
-
+﻿
 using Microsoft.AspNetCore.Mvc;
 using DIS_projekt.Models;
+using Microsoft.Data.Sqlite;
 
 namespace CompanyApplication.Repositories
 {
-    public class CompanyRepository
+    public class CompanyRepository : ICompanyRepository
     {
         // List of all companies
         private readonly List<Company> m_lstCompanies;
@@ -70,6 +60,24 @@ namespace CompanyApplication.Repositories
             m_lstCompanies.Remove(companyToDelete);
 
             return true;
+        }
+
+        public void UpdateCompany(int id, Company updatedCompany)
+        {
+
+            Company? existingCompany = GetSingleCompany(id);
+            if (existingCompany is not null)
+            {
+                // Update only if the user has permission
+                // Implement access control logic as needed
+                existingCompany.CompanyName = updatedCompany.CompanyName;
+                existingCompany.OwnerName = updatedCompany.OwnerName;
+                existingCompany.Revenue = updatedCompany.Revenue;
+            }
+            else
+            {
+                throw new KeyNotFoundException($"Company with ID '{id}' not found.");
+            }
         }
     }
 }
